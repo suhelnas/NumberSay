@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NumberSay</string>
+    <string name="trivia">Trivia</string>
+    <string name="math">Math</string>
+    <string name="date">Date</string>
+    <string name="year">Year</string>
+    <string name="showfact">Show Fact</string>
+    <string name="alertdialogtype">Select one of the Radio Button to get type of fact</string>
+    <string name="alertdialogemptyedit">Enter a value </string>
+</resources>

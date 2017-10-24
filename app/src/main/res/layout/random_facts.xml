@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pc.numbersay.RandomFacts">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/firstrow"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <Button
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="@dimen/textlength"
+        android:id="@+id/trivia"
+        android:text="@string/trivia"
+        android:textSize="@dimen/textsizebutton"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@drawable/edittextroundcorner"
+        android:onClick="getTrivia"/>
+
+    <Button
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="@dimen/textlength"
+        android:id="@+id/math"
+        android:text="@string/math"
+        android:textSize="@dimen/textsizebutton"
+        android:onClick="getMath"
+        android:background="@drawable/edittextroundcorner"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/secondrow"
+        android:layout_below="@+id/firstrow"
+        android:layout_marginTop="@dimen/margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <Button
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="@dimen/textlength"
+        android:id="@+id/date"
+        android:text="@string/date"
+        android:textSize="@dimen/textsizebutton"
+        android:layout_marginRight="@dimen/margin"
+        android:onClick="getDate"
+        android:background="@drawable/edittextroundcorner"/>
+
+    <Button
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="@dimen/textlength"
+        android:id="@+id/year"
+        android:text="@string/year"
+        android:textSize="@dimen/textsizebutton"
+        android:onClick="getYear"
+        android:background="@drawable/edittextroundcorner"
+        />
+ </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fact"
+        android:padding="10dp"
+        android:textSize="@dimen/textsizefact"
+        android:layout_marginTop="@dimen/margintopfact"
+        android:layout_below="@+id/secondrow"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/iconfab"
+        android:id="@+id/floating"/>
+
+</RelativeLayout>
